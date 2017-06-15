@@ -1,7 +1,15 @@
 function ipts = cheeger_poly(pts,arg2)
 
 % use Lachand-Robert - Kawohl formulation to find the Cheeger set
-% area of the t-inner offset = pi*t^2
+% !! find t such that the area of the t-inner offset = pi*t^2
+%
+% relies on the Clipper Library for computing efficiently polygon offsets
+% 
+% Syntax
+%    cheeger_poly(pts,arg2)
+%        pts - 2xN matrix containing coordinates of points in 2D
+%        arg2- additional argument. If used, a plot of the polygon and
+%              of the Cheeger set appears
 
 if nargin>1
  plotting = 1;
