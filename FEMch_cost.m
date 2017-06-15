@@ -13,21 +13,10 @@ K    = Prob.K;
 M    = Prob.M;
 dim  = 2;
 pow  = 2*dim/(dim-1);
-%pow = 1;
 alpha = Prob.alpha;
 fact = Prob.fact;
 pn   = Prob.pn;
 Ibord = Prob.Ibord;
-
-
-
-
-
-%val  = ep*U'*As*U+1/ep*v'*B*v;%;  % MM value - perimeter
-
-%gradt = 2*ep*As*U+1/ep*2*B*v.*(1-2*U);%1/ep*2*U.*(1-U).*(1-2*U);%;
-
-%gradt = reshape(gradt,npt,nphi);
 
 U = reshape(U,npt,nphi);
 v  = U.*(1-U);
@@ -65,7 +54,7 @@ valf                                = (sum(val.^pn))^(1/pn);
 for i=1:nphi
   gradt(:,i)       = gradt(:,i)*(sum(val.^pn))^(1/pn-1)*val(i)^(pn-1);
 end
-%1/fact*pen
+
 valf  = valf+fact*pen;
 gradt = gradt+fact*gradpen;
 
