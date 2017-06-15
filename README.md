@@ -20,5 +20,7 @@ Requirements:
 Install: 
 Just copy all the files into one folder and make sure this folder is in the Matlab path. 
 
-Usage:
-FEMcheeger2.m    : the optimization algorithm
+Usage: main functions are listed below. Type 'help function_name' to find detailed instructions and examples
+- FEMcheeger2.m    : the optimization algorithm
+- cheeger_poly.m   : Kawohl, Lachand-Robert algorithm
+- CH_testing.m     : testing of the KLR algorithm
