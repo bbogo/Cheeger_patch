@@ -16,6 +16,8 @@ Requirements:
 2. Polygon offset algorithms (necessary for the implementation of the Kawohl, Lachand-Robert algorithm)
 - Clipper toolbox http://www.angusj.com/delphi/clipper.php
 - Matlab interface for Clipper https://fr.mathworks.com/matlabcentral/fileexchange/61329-new-polygon-clipping-and-offsetting
+3. Mesh 2D if you want to use algorithm for general 2D domains
+- https://fr.mathworks.com/matlabcentral/fileexchange/25555-mesh2d-delaunay-based-unstructured-mesh-generation
 
 Install: 
 Just copy all the files into one folder and make sure this folder is in the Matlab path. 
