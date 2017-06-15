@@ -1,5 +1,9 @@
 function CH_testing
 
+% tests the Cheeger set computation using the Clipper library
+% 
+% usage: simply run CH_testing
+
 load('test_caseCH.mat','square');
 whos square
 
